@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Report Card</h1>
+        <div class="input-section">
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="number" id="englishGrade" placeholder="English Grade (0-100)" required>
+            <input type="number" id="urduGrade" placeholder="Urdu Grade (0-100)" required>
+            <input type="number" id="physicsGrade" placeholder="Physics Grade (0-100)" required>
+            <input type="number" id="computerGrade" placeholder="Computer Grade (0-100)" required>
+            <input type="number" id="mathGrade" placeholder="Math Grade (0-100)" required>
+            <button onclick="generateReportCard()">Generate Report Card</button>
+        </div>
+        
+        <div id="reportCard" class="report-card"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
